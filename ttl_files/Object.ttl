@@ -1,0 +1,68 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#>.
+@prefix fpo: <https://github.com/johnBradley501/FPO/raw/master/fpo.owl#>.
+@prefix ex: <https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#>.
+
+<http://www.example.com/roman-ontology/resource/obj/regnum>
+	a ex:ConceptualObject;
+	ex:name "regnum"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/legatio>
+	a ex:ConceptualObject;
+	ex:name "legatio"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/magistratus>
+	a ex:ConceptualObject;
+	ex:name "magistratus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/principatus>
+	a ex:ConceptualObject;
+	ex:name "principatus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/imperius>
+	a ex:ConceptualObject;
+	ex:name "imperium"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/emigaration>
+	a ex:ConceptualObject;
+	ex:name "emigration"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/totaGallia>
+	a ex:ConceptualObject;
+	ex:name "totaGallia"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/vindication>
+	a ex:ConceptualObject;
+	ex:name "vindication"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/ager>
+	a ex:PhysicalObject;
+	ex:name "ager"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/oppidum>
+	a ex:PhysicalObject;
+	ex:name "oppidum"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/vicus>
+	a ex:PhysicalObject;
+	ex:name "vicus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/aedificium>
+	a ex:PhysicalObject;
+	ex:name "aedificium"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/corn>
+	a ex:PhysicalObject;
+	ex:name "corn"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/domus>
+	a ex:PhysicalObject;
+	ex:name "domus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/obj/provisions>
+	a ex:PhysicalObject;
+	ex:name "provisions"^^xsd:string.
+

@@ -1,0 +1,679 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#>.
+@prefix fpo: <https://github.com/johnBradley501/FPO/raw/master/fpo.owl#>.
+@prefix ex: <https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#>.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_1>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/regnum_fact_1>
+	ex:sourceDescription "regnum"^^xsd:string;
+	ex:of <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/regnum>;
+	a ex:ConceptualObjectReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/desire_fact_1>
+	ex:sourceDescription "cupiditate inductus"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/desire>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_2>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/persuade_fact_2>
+	ex:sourceDescription "persuadeo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/persuade>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_2>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_22>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/conspire_fact_22>
+	ex:sourceDescription "conjurationem facio"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/conspire>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/grRef/gr_1_fact_22>
+	ex:sourceDescription "nobilitas"^^xsd:string;
+	ex:of <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/gr/gr_1>;
+	a ex:GroupReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_23>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/agitate_fact_23>
+	ex:sourceDescription "permoveo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/agitate>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_23>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_24>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/depart_fact_24>
+	ex:sourceDescription "proficiscor"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/depart>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_3>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/decree_fact_3>
+	ex:sourceDescription "constituo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/decree>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_4>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/elect_fact_4>
+	ex:sourceDescription "deligo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/elect>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_4>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_4_fact_10>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_25>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_4_fact_10>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/undertake_fact_25>
+	ex:sourceDescription "suscipio"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/undertake>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/legatio_fact_25>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/legatio>;
+	a ex:ConceptualObjectReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_5>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_4_fact_10>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/agitate_fact_5>
+	ex:sourceDescription "persuadeo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/agitate>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_2_fact_5>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_2_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_2>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_2_fact_26>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_2_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_2>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/takeover_fact_26>
+	ex:sourceDescription "occupo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/takeover>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/regnum_fact_26>
+	ex:of <http://www.example.com/roman-ontology/resource/comm/comm_2>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/regnum>;
+	a ex:ConceptualObjectReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_2_fact_27>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_2>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/isSon_fact_27>
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/isSon>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_3_fact_27>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_3>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_3_fact_28>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_3>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/holdPosition_fact_28>
+	ex:sourceDescription "obtineo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/holdPosition>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/regnum_fact_28>
+	ex:sourceDescription "regnum"^^xsd:string;
+	ex:of <http://www.example.com/roman-ontology/resource/comm/comm_2>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/regnum>;
+	a ex:ConceptualObjectReference.
+
+<http://www.example.com/roman-ontology/resource/instRef/inst_1_fact_29>
+	ex:sourceDescription "senatus populi Romani"^^xsd:string;
+	ex:of <http://www.example.com/roman-ontology/resource/comm/comm_41>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/inst/inst_1>;
+	a ex:InstitutionReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/callFriend_fact_29>
+	ex:sourceDescription "amicus appello"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/callFriend>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_3_fact_29>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_3>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_6>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_4_fact_10>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_4_fact_6>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_4_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_4>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/agitate_fact_6>
+	ex:sourceDescription "persuadeo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/agitate>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_4_fact_30>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_4_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_4>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/takeover_fact_30>
+	ex:sourceDescription "occupo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/takeover>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/regnum_fact_30>
+	ex:of <http://www.example.com/roman-ontology/resource/comm/comm_3>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/regnum>;
+	a ex:ConceptualObjectReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_4_fact_42>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_4>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/isBrother_fact_42>
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/isBrother>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_5_fact_42>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_5>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_5_fact_7>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_5_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers_pers_5>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/holdPosition_fact_7>
+	ex:sourceDescription "obtineo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/holdPosition>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/parincipatus_fact_7>
+	ex:sourceDescription "parincipatus"^^xsd:string;
+	ex:of <http://www.example.com/roman-ontology/resource/comm/comm_3>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/principatus>;
+	a ex:ConceptualObjectReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_8>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_4_fact_10>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_4_fact_8>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_4_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_4>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/marryOff_fact_8>
+	ex:sourceDescription "in matrimonium dare"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/marryOff>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_9_fact_8>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_9>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_9_fact_31>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_9>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/isWife_fact_31>
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/isWife>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_4_fact_31>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_4>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_9>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_4_fact_10>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_2_fact_9>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_2_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_2>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_4_fact_9>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_4_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_4>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/desire_fact_9>
+	ex:sourceDescription "spero"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/desire>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_32>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_2_fact_32>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_2_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_2>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_3_fact_32>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_3_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_3>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/takeover_fact_32>
+	ex:sourceDescription "potior"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/takeover>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/imperium_fact_32>
+	ex:of <http://www.example.com/roman-ontology/resource/obj/totaGallia>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/imperium>;
+	a ex:ConceptualObjectReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_10>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_10>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/compel_fact_10>
+	ex:sourceDescription "cogo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/compel>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/vindication_fact_10>
+	ex:sourceDescription "causam dicere"^^xsd:string;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/vindication>;
+	a ex:ConceptualObjectReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_11>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/convocate_fact_11>
+	ex:sourceDescription "cogo conduco"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/convocate>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/grRef/gr_2_fact_11>
+	ex:sourceDescription "sua familia"^^xsd:string;
+	ex:of <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	ex:hasNumber "10000"^^xsd:integer;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/gr/gr_2>;
+	a ex:GroupReference.
+
+<http://www.example.com/roman-ontology/resource/grRef/gr_3_fact_11>
+	ex:sourceDescription "clientes"^^xsd:string;
+	ex:of <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/gr/gr_3>;
+	a ex:GroupReference.
+
+<http://www.example.com/roman-ontology/resource/grRef/gr_4_fact_11>
+	ex:sourceDescription "obaeratus"^^xsd:string;
+	ex:of <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/gr/gr_4>;
+	a ex:GroupReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_12>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/escape_fact_12>
+	ex:sourceDescription "se eripio"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/escape>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_12>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_13>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/persCont/pers_1_fact_1_fact_13>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_1>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/decease_fact_13>
+	ex:sourceDescription "mortuus est"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/decease>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/grRef/gr_5_fact_33>
+	ex:sourceDescription "magistratus"^^xsd:string;
+	ex:of <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/gr/gr_5>;
+	a ex:GroupReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/convocate_fact_33>
+	ex:sourceDescription "cogo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/convocate>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/ager_fact_33>
+	ex:sourceDescription "ager"^^xsd:string;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/ager>;
+	a ex:PhysicalObjectReference.
+
+<http://www.example.com/roman-ontology/resource/grRef/gr_6_fact_33>
+	ex:sourceDescription "multitudo"^^xsd:string;
+	ex:of <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/gr/gr_6>;
+	a ex:GroupReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_14>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/attempt_fact_14>
+	ex:sourceDescription "conor"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/attempt>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_15>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/depart_fact_15>
+	ex:sourceDescription "exeo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/depart>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_16>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/setFire_fact_16>
+	ex:sourceDescription "incendo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/setFire>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/oppidum_fact_16>
+	ex:sourceDescription "oppida sua omnia, numero ad duodecim"^^xsd:string;
+	ex:hasNumber "12"^^xsd:integer;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/oppidum>;
+	a ex:PhysicalObjectReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/vicus_fact_16>
+	ex:sourceDescription "vicos ad quadringentos"^^xsd:string;
+	ex:hasNumber "400"^^xsd:integer;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/vicus>;
+	a ex:PhysicalObjectReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/aedificium_fact_16>
+	ex:sourceDescription "reliqua privata aedificia"^^xsd:string;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/aedificium>;
+	a ex:PhysicalObjectReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_17>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/setFire_fact_17>
+	ex:sourceDescription "combro"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/setFire>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/corn_fact_17>
+	ex:sourceDescription "frumentum omne"^^xsd:string;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/corn>;
+	a ex:PhysicalObjectReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_18>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/order_fact_18>
+	ex:sourceDescription "jubeo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/order>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/grRef/gr_6_fact_18>
+	ex:of <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/gr/gr_6>;
+	a ex:GroupReference.
+
+<http://www.example.com/roman-ontology/resource/grRef/gr_6_fact_19>
+	ex:of <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/gr/gr_6>;
+	a ex:GroupReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/take_fact_19>
+	ex:sourceDescription "effero"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/takeover>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/domus_fact_19>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/domus>;
+	a ex:PhysicalObjectReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/provisions_fact_19>
+	ex:sourceDescription "trium mensum molita cibaria"^^xsd:string;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/provisions>;
+	a ex:PhysicalObjectReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_20>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/persuade_fact_20>
+	ex:sourceDescription "persuadeo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/persuade>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_4_fact_20>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_4_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_4>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_5_fact_20>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_5_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_5>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_6_fact_20>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_6_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_6>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_4_fact_21>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_4_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_4>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_5_fact_21>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_5_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_5>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_6_fact_21>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_6_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_6>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/setFire_fact_21>
+	ex:sourceDescription "exuro"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/setFire>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/oppidum_fact_21>
+	ex:sourceDescription "oppidis suis"^^xsd:string;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/oppidum>;
+	a ex:PhysicalObjectReference.
+
+<http://www.example.com/roman-ontology/resource/objRef/vicus_fact_21>
+	ex:sourceDescription "vicisque"^^xsd:string;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/obj/vicus>;
+	a ex:PhysicalObjectReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_4_fact_34>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_4_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_4>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_5_fact_34>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_5_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_5>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_6_fact_34>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_6_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_6>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/depart_fact_34>
+	ex:sourceDescription "proficiscor"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/depart>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_34>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_35>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/ally_fact_35>
+	ex:sourceDescription "socios sibi adsciscunt"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/ally>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_7_fact_35>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_7_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_7>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_36>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/estimate_fact_36>
+	ex:sourceDescription "existimo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/estimate>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_37>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/persuade_fact_37>
+	ex:sourceDescription "persuadeo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/persuade>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_8_fact_37>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_8_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_8>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_38>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/compel_fact_38>
+	ex:sourceDescription "cogo"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/compel>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_8_fact_38>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_8_fact_1_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_8>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_39>
+	ex:referencesEntityInContext <http://www.example.com/roman-ontology/resource/commCont/comm_1_fact_13_fact_40>;
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/comm/comm_1>;
+	a ex:CommunityReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/gather_fact_39>
+	ex:sourceDescription "convenio"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/gather>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/placeRef/place_1_fact_39>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/place/place_1>;
+	a ex:PlaceReference.
+
+<http://www.example.com/roman-ontology/resource/persRef/pers_6_fact_40>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/pers/pers_6>;
+	a ex:PersonReference.
+
+<http://www.example.com/roman-ontology/resource/predRef/arrive_fact_40>
+	ex:sourceDescription "parvenio"^^xsd:string;
+	ex:referencesPredicate <http://www.example.com/roman-ontology/resource/pred/arrive>;
+	a ex:PredicateReference.
+
+<http://www.example.com/roman-ontology/resource/placeRef/place_4_fact_40>
+	ex:referencesEntity <http://www.example.com/roman-ontology/resource/place/place_4>;
+	a ex:PlaceReference.
+

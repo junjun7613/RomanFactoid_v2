@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#>.
+@prefix fpo: <https://github.com/johnBradley501/FPO/raw/master/fpo.owl#>.
+@prefix ex: <https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#>.
+
+<http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>
+	a ex:DataRange;
+	ex:isTo <http://datetime.hutime.org/calendar/102.1/year/1699144.5>;
+	ex:isTo <http://datetime.hutime.org/calendar/102.1/year/1699144.5>.
+
+<http://www.example.com/roman-ontology/resource/dateRange/dateRange_fbc61>
+	a ex:DataRange;
+	ex:isTo <http://datetime.hutime.org/calendar/102.1/year/1699144.5>.
+
+<http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc58-03-28>
+	a ex:DataRange;
+	ex:isTo <http://datetime.hutime.org/calendar/102.1/date/1700324.5>;
+	ex:isTo <http://datetime.hutime.org/calendar/102.1/date/1700324.5>.
+

@@ -1,0 +1,171 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#>.
+@prefix fpo: <https://github.com/johnBradley501/FPO/raw/master/fpo.owl#>.
+@prefix ex: <https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#>.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_1>
+	a ex:Person;
+	owl:sameAs <https://www.wikidata.org/wiki/Q458835>;
+	ex:name "Orgetorix"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_2>
+	a ex:Person;
+	owl:sameAs <https://www.wikidata.org/wiki/Q942646>;
+	ex:name "Casticus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_3>
+	a ex:Person;
+	owl:sameAs <https://www.wikidata.org/wiki/Q635589>;
+	ex:name "Catamantaloedes"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_4>
+	a ex:Person;
+	owl:sameAs <https://www.wikidata.org/wiki/Q370220>;
+	ex:name "Dumnorix"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_5>
+	a ex:Person;
+	owl:sameAs <https://www.wikidata.org/wiki/Q265757>;
+	ex:name "Diviciacus(Haedui)"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_6>
+	a ex:Person;
+	ex:nomen "Caius"^^xsd:string;
+	ex:praenomen "Iulius"^^xsd:string;
+	ex:cognomen "Caesar"^^xsd:string;
+	ex:name "C. Iulius Caesar"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_7>
+	a ex:Person;
+	ex:name "Nammeius"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_8>
+	a ex:Person;
+	ex:name "Verucloetius"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_9>
+	a ex:Person;
+	ex:name "daughterOfOrgetorix"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_10>
+	a ex:Person;
+	ex:nomen "Titus"^^xsd:string;
+	ex:cognomen "Labienus"^^xsd:string;
+	ex:name "T. Labienus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_11>
+	a ex:Person;
+	ex:name "Divico"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_12>
+	a ex:Person;
+	ex:name "Liscus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_13>
+	a ex:Person;
+	ex:name "motherOfDumnorix"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_14>
+	a ex:Person;
+	ex:name "princepsOfBiturigiorum"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_15>
+	a ex:Person;
+	ex:name "C. Valerius Troucillus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_16>
+	a ex:Person;
+	ex:nomen "Publius"^^xsd:string;
+	ex:cognomen "Considius"^^xsd:string;
+	ex:name "P. Considius"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_17>
+	a ex:Person;
+	ex:nomen "Marcus"^^xsd:string;
+	ex:praenomen "Licinius"^^xsd:string;
+	ex:cognomen "Crassus"^^xsd:string;
+	ex:name "M. Licinius Crassus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_18>
+	a ex:Person;
+	ex:nomen "Lucius"^^xsd:string;
+	ex:praenomen "Cornelius"^^xsd:string;
+	ex:cognomen "Sulla"^^xsd:string;
+	ex:name "L. Cornelius Sulla Felix"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_19>
+	a ex:Person;
+	ex:name "Ariovistus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_20>
+	a ex:Person;
+	ex:nomen "Marcus"^^xsd:string;
+	ex:name "M. Mettius"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_21>
+	a ex:Person;
+	ex:name "Q. Pedius"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_22>
+	a ex:Person;
+	ex:name "Iccius"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_23>
+	a ex:Person;
+	ex:name "Andecumborius"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_24>
+	a ex:Person;
+	ex:name "Diviciacus(Suessiones)"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_25>
+	a ex:Person;
+	ex:name "Galba"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_26>
+	a ex:Person;
+	ex:name "Q. Titurius Sabinus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_27>
+	a ex:Person;
+	ex:name "L. Auruncleius Cotta"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_28>
+	a ex:Person;
+	ex:name "Boduognatus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_29>
+	a ex:Person;
+	ex:name "P. Licinius Crassus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_30>
+	a ex:Person;
+	ex:name "S. Sulpicius Galba"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_31>
+	a ex:Person;
+	ex:name "T. Terrasidius"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_32>
+	a ex:Person;
+	ex:name "M. Trebius Gallus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_33>
+	a ex:Person;
+	ex:name "Q. Velanius"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_34>
+	a ex:Person;
+	ex:name "D. Brutus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_35>
+	a ex:Person;
+	ex:name "Viridovix"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/pers/pers_36>
+	a ex:Person;
+	ex:name "Adiatuanus"^^xsd:string.
+

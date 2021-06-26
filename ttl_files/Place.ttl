@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#>.
+@prefix fpo: <https://github.com/johnBradley501/FPO/raw/master/fpo.owl#>.
+@prefix ex: <https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#>.
+
+<http://www.example.com/roman-ontology/resource/place/place_1>
+	owl:sameAs <https://pleiades.stoa.org/places/148168>;
+	ex:name "Phodanus"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/place/place_2>
+	owl:sameAs <https://pleiades.stoa.org/places/167922>;
+	ex:name "Sequani"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/place/place_3>
+	owl:sameAs <https://pleiades.stoa.org/places/177533>;
+	ex:name "Haedui"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/place/place_4>
+	owl:sameAs <https://pleiades.stoa.org/places/177528>;
+	ex:name "Genava"^^xsd:string.
+
