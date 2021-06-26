@@ -1,0 +1,40 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#>.
+@prefix fpo: <https://github.com/johnBradley501/FPO/raw/master/fpo.owl#>.
+@prefix ex: <https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#>.
+
+<http://www.example.com/roman-ontology/resource/comm/comm_1>
+	a ex:Community;
+	ex:name "Helvetii"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/comm/comm_2>
+	a ex:Community;
+	ex:name "Sequani"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/comm/comm_3>
+	a ex:Community;
+	ex:name "Haedui"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/comm/comm_4>
+	a ex:Community;
+	ex:name "Rauracii"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/comm/comm_5>
+	a ex:Community;
+	ex:name "Tulingi"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/comm/comm_6>
+	a ex:Community;
+	ex:name "Latobrigi"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/comm/comm_7>
+	a ex:Community;
+	ex:name "Boii"^^xsd:string.
+
+<http://www.example.com/roman-ontology/resource/comm/comm_8>
+	a ex:Community;
+	ex:name "Allobroges"^^xsd:string.
+

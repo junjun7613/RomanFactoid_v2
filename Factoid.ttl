@@ -1,0 +1,410 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#>.
+@prefix fpo: <https://github.com/johnBradley501/FPO/raw/master/fpo.owl#>.
+@prefix ex: <https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_1>
+	a ex:Thought;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_2_1>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_1>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/regnum_fact_1>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_22>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_2>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/desire_fact_1>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_2>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_2_1>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_2>;
+	ex:whom <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_2>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_3>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_22>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/persuade_fact_2>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_22>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_2_1>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_22>;
+	ex:whom <http://www.example.com/roman-ontology/resource/grRef/gr_1_fact_22>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_3>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_2>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/conspire_fact_22>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_23>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_1>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_23>;
+	ex:whom <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_23>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_3>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/agitate_fact_23>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_3>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_1>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRefcomm_1_fact_3>;
+	ex:hasContent <http://www.example.com/roman-ontology/resource/fact/fact_24>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_4>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/decree_fact_3>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_24>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_1>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_24>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/depart_fact_24>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_4>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_3>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_4>;
+	ex:whom <http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_4>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_25>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/elect_fact_4>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_25>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_3>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persref/pers_1_fact_25>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/legatio_fact_25>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_6>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_5>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/undertake_fact_25>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_5>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_4>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_5>;
+	ex:whom <http://www.example.com/roman-ontology/resource/persRef/pers_2_fact_5>;
+	ex:hasContent <http://www.example.com/roman-ontology/resource/fact/fact_26>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_10>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_9>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/agitate_fact_5>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_26>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_4>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_2_fact_26>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/regnum_fact_26>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/tpredRef/akeover_fact_26>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_27>
+	a ex:FamilialRelationship;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_4>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_2_fact_27>;
+	ex:whom <http://www.example.com/roman-ontology/resource/persRef/pers_3_fact_27>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/isSon_fact_27>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_28>
+	a ex:Situation;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_4>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persref/pers_3_fact_28>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/regnum_fact_28>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_29>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/holdPosition_fact_28>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_29>
+	a ex:Situation;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_4>;
+	ex:subject <http://www.example.com/roman-ontology/resource/instRef/inst_1_fact_29>;
+	ex:whom <http://www.example.com/roman-ontology/resource/persRef/pers_3_fact_29>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_28>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/callFriend_fact_29>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_6>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_5>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_6>;
+	ex:whom <http://www.example.com/roman-ontology/resource/persRef/pers_4_fact_6>;
+	ex:hasContent <http://www.example.com/roman-ontology/resource/fact/fact_30>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_10>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_8>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_9>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/agitate_fact_6>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_30>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_5>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_4_fact_30>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/regnum_fact_30>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/takeover_fact_30>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_42>
+	a ex:FamilialRelationship;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_5>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persref/pers_4_fact_42>;
+	ex:whom <http://www.example.com/roman-ontology/resource/persRef/pers_5_fact_42>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/inBrother_fact_42>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_7>
+	a ex:Situation;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_5>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_5_fact_7>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/principatus_fact_7>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_6>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/holdPosition_fact_7>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_8>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_5>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_8>;
+	ex:what <http://www.example.com/roman-ontology/resource/persRef/pers_9_fact_8>;
+	ex:whom <http://www.example.com/roman-ontology/resource/persRef/pers_4_fact_8>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_6>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_31>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/marryOff_fact_8>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_31>
+	a ex:FamilialRelationship;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_5>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_9_fact_31>;
+	ex:whom <http://www.example.com/roman-ontology/resource/persRef/pers_4_fact_31>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_fbc61>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/isWife_fact_31>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_9>
+	a ex:Thought;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_6>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_9>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_2_fact_9>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persref/pers_3_fact_9>;
+	ex:hasContent <http://www.example.com/roman-ontology/resource/fact/fact_32>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/desire_fact_9>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_32>
+	a ex:Situation;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_3_6>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_32>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_2_fact_32>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_3_fact_32>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/imperium_fact_32>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/takeover_fact_32>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_10>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_4_1>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_10>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/vindication_fact_10>;
+	ex:whom <http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_10>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_11>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/compel_fact_10>.
+
+<http://www.example.com/roman-ontology/resource/factfact_11>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_4_2>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persref/pers_1_fact_11>;
+	ex:what <http://www.example.com/roman-ontology/resource/grRef/gr_2_fact_11>;
+	ex:what <http://www.example.com/roman-ontology/resource/grRef/gr_3_fact_11>;
+	ex:what <http://www.example.com/roman-ontology/resource/grRef/gr_4_fact_11>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_12>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/convocate_fact_11>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_12>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_4_2>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persref/pers_1_fact_12>;
+	ex:whom <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_12>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_33>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_33>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/escape_fact_12>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_13>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_4_3>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_1_fact_13>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_14>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/decease_fact_13>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_33>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_4_3>;
+	ex:subject <http://www.example.com/roman-ontology/resource/grRef/gr_5_fact_33>;
+	ex:what <http://www.example.com/roman-ontology/resource/grRef/gr_6_fact_33>;
+	ex:from <http://www.example.com/roman-ontology/resource/objRef/ager_fact_33>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc61>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_13>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_13>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/convocate_fact_33>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_14>
+	a ex:Thought;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_5_1>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_14>;
+	ex:hasContent <http://www.example.com/roman-ontology/resource/fact/fact_15>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_16>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_17>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_18>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_35>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_36>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_20>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/attempt_fact_14>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_15>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_5_1>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_15>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/depart_fact_15>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_16>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_5_2>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_16>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/oppidum_fact_16>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/vicus_fact_16>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/aedificium_fact_16>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_17>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_20>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_35>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_36>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_18>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/setFire_fact_16>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_17>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_5_3>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_17>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/corn_fact_17>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_16>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_20>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_35>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_36>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_18>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/setFire_fact_17>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_18>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_5_3>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_18>;
+	ex:whom <http://www.example.com/roman-ontology/resource/grRef/gr_6_fact_18>;
+	ex:hasContent <http://www.example.com/roman-ontology/resource/fact/fact_19>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_17>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_20>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_35>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_36>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_16>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/order_fact_18>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_19>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_5_3>;
+	ex:subject <http://www.example.com/roman-ontology/resource/grRef/gr_6_fact_19>;
+	ex:from <http://www.example.com/roman-ontology/resource/objRef/domus_fact_19>;
+	ex:with <http://www.example.com/roman-ontology/resource/objRef/provisions_fact_19>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/take_fact_19>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_20>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_5_4>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_20>;
+	ex:whom <http://www.example.com/roman-ontology/resource/commRef/comm_4_fact_20>;
+	ex:whom <http://www.example.com/roman-ontology/resource/commRef/comm_5_fact_20>;
+	ex:whom <http://www.example.com/roman-ontology/resource/commRef/comm_6_fact_20>;
+	ex:hasContent <http://www.example.com/roman-ontology/resource/fact/fact_21>;
+	ex:hasContent <http://www.example.com/roman-ontology/resource/fact/fact_34>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_16>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_17>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_18>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_36>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_35>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/persuade_fact_20>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_21>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_5_4>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_4_fact_21>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_5_fact_21>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_6_fact_21>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/oppidum_fact_21>;
+	ex:what <http://www.example.com/roman-ontology/resource/objRef/vicus_fact_21>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/setFire_fact_21>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_34>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_5_4>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_4_fact_34>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_5_fact_34>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_6_fact_34>;
+	ex:with <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_34>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/depart_fact_34>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_35>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_5_4>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_35>;
+	ex:whom <http://www.example.com/roman-ontology/resource/commRef/comm_7_fact_35>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_16>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_17>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_18>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_36>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_20>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/ally_fact_35>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_36>
+	a ex:Thought;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_6_3>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_36>;
+	ex:hasContent <http://www.example.com/roman-ontology/resource/fact/fact_37>;
+	ex:hasContent <http://www.example.com/roman-ontology/resource/fact/fact_38>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_16>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_17>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_18>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_35>;
+	ex:mentionedAsParallel <http://www.example.com/roman-ontology/resource/fact/fact_20>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/estimate_fact_36>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_37>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_6_3>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_37>;
+	ex:whom <http://www.example.com/roman-ontology/resource/commRef/comm_8_fact_37>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/persuade_fact_37>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_38>
+	a ex:Contact;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_6_3>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_38>;
+	ex:whom <http://www.example.com/roman-ontology/resource/commRef/comm_8_fact_38>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/compel_fact_38>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_39>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_6_4>;
+	ex:subject <http://www.example.com/roman-ontology/resource/commRef/comm_1_fact_39>;
+	ex:atWhere <http://www.example.com/roman-ontology/resource/placeRef/place_1_fact_39>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc58-03-28>;
+	ex:mentionedAsPrecedent <http://www.example.com/roman-ontology/resource/fact/fact_40>;
+	ex:therefore <http://www.example.com/roman-ontology/resource/fact/fact_40>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/gather_fact_39>.
+
+<http://www.example.com/roman-ontology/resource/fact/fact_40>
+	a ex:Action;
+	ex:source <http://www.example.com/roman-ontology/resource/source/BG_1_7_1>;
+	ex:subject <http://www.example.com/roman-ontology/resource/persRef/pers_6_fact_40>;
+	ex:atWhere <http://www.example.com/roman-ontology/resource/placeRef/place_4_fact_40>;
+	ex:when <http://www.example.com/roman-ontology/resource/dateRange/dateRange_abc58>;
+	ex:because <http://www.example.com/roman-ontology/resource/>;
+	ex:hasPredicate <http://www.example.com/roman-ontology/resource/predRef/arrive_fact_40>.
+
