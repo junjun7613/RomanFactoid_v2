@@ -1,0 +1,567 @@
+@prefix ex: <https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#> .
+@prefix p0: <https://github.com/johnBradley501/FPO/raw/master/fpo.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hutime: <http://resource.hutime.org/ontology/> .
+@base <https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl> .
+
+<https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#atWhere
+ex:atWhere rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf ex:locationProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#because
+ex:because rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf ex:causalRelationship ;
+         owl:inverseOf ex:therefore .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#belongTo
+ex:belongTo rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf ex:contextProperty ;
+          rdfs:domain ex:EntityInContext ;
+          rdfs:range ex:EntityInContext .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#causalRelationship
+ex:causalRelationship rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf ex:factoidRelationship .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#compriseOfThing
+ex:compriseOfThing rdf:type owl:ObjectProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#contextExpression
+ex:contextExpression rdf:type owl:ObjectProperty ;
+                   rdfs:domain ex:EntityInContext ;
+                   rdfs:range ex:Factoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#contextProperty
+ex:contextProperty rdf:type owl:ObjectProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#contextRelationship
+ex:contextRelationship rdf:type owl:ObjectProperty ;
+                     rdfs:domain ex:EntityInContext ;
+                     rdfs:range ex:ChronPeriod ,
+                                ex:EntityInContext .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#contextualAspectOf
+ex:contextualAspectOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain ex:EntityInContext ;
+                    rdfs:range ex:Entity .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#ctsURI
+ex:ctsURI rdf:type owl:ObjectProperty ;
+        rdfs:domain ex:Source .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#eventAt
+ex:eventAt rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf ex:contextExpression .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#eventSince
+ex:eventSince rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf ex:contextExpression .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#eventUntil
+ex:eventUntil rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf ex:contextExpression .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#factoidRelationship
+ex:factoidRelationship rdf:type owl:ObjectProperty ;
+                     rdfs:domain ex:Factoid ;
+                     rdfs:range ex:Factoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#from
+ex:from rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf ex:how ;
+      rdfs:range ex:PlaceReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#fromWhere
+ex:fromWhere rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf ex:locationProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#hasContent
+ex:hasContent rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf ex:sceneObjectProperty ;
+            rdfs:domain ex:Factoid ;
+            rdfs:range ex:Factoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#hasLocation
+ex:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf ex:contextProperty ;
+             rdfs:domain ex:EntityInContext ;
+             rdfs:range ex:PlaceInContext .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#hasPosition
+ex:hasPosition rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf ex:contextProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#hasPredicate
+ex:hasPredicate rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf ex:sceneProperty ;
+              rdfs:domain ex:Factoid ;
+              rdfs:range ex:Predicate .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#hasProperty
+ex:hasProperty rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf ex:sceneProperty ;
+             rdfs:domain ex:Factoid ;
+             rdfs:range ex:Property .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#hasSource
+ex:hasSource rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf ex:sceneProperty ;
+           rdfs:domain ex:Factoid ;
+           rdfs:range ex:Source .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#how
+ex:how rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf ex:sceneObjectProperty ;
+     rdfs:domain ex:Factoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#includedIn
+ex:includedIn rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf ex:contextRelationship .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#isEntity
+ex:isEntity rdf:type owl:ObjectProperty ;
+          rdfs:range ex:EntityReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#isPartOf
+ex:isPartOf rdf:type owl:ObjectProperty ;
+          rdfs:domain ex:Place ;
+          rdfs:range ex:Place .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#locationProperty
+ex:locationProperty rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf ex:sceneObjectProperty ;
+                  rdfs:domain ex:Factoid ;
+                  rdfs:range ex:PlaceReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#mentionedAsFollow
+ex:mentionedAsFollow rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf ex:temporalRelationship ;
+                   owl:inverseOf ex:mentionedAsPrecedent ;
+                   rdf:type owl:TransitiveProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#mentionedAsParallel
+ex:mentionedAsParallel rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf ex:temporalRelationship ;
+                     rdf:type owl:SymmetricProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#mentionedAsPrecedent
+ex:mentionedAsPrecedent rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf ex:temporalRelationship ;
+                      rdf:type owl:TransitiveProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#nearWhere
+ex:nearWhere rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf ex:locationProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#of
+ex:of rdf:type owl:ObjectProperty ;
+    rdfs:domain ex:EntityReference ;
+    rdfs:range ex:Entity .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#referencesEntity
+ex:referencesEntity rdf:type owl:ObjectProperty ;
+                  rdfs:domain ex:EntityReference ;
+                  rdfs:range ex:Entity .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#referencesEntityInContext
+ex:referencesEntityInContext rdf:type owl:ObjectProperty ;
+                           rdfs:domain ex:EntityReference ;
+                           rdfs:range ex:EntityInContext .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#referencesPredicate
+ex:referencesPredicate rdf:type owl:ObjectProperty ;
+                     rdfs:domain ex:PredicateReference ;
+                     rdfs:range ex:Predicate .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#sceneObjectProperty
+ex:sceneObjectProperty rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf ex:sceneProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#sceneProperty
+ex:sceneProperty rdf:type owl:ObjectProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#source
+ex:source rdf:type owl:ObjectProperty ;
+        rdfs:domain ex:Factoid ;
+        rdfs:range ex:Source .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#sourceContext
+ex:sourceContext rdf:type owl:ObjectProperty ;
+               rdfs:domain ex:EntityReference ;
+               rdfs:range ex:Source .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#subject
+ex:subject rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf ex:sceneProperty ;
+         rdfs:domain ex:Factoid ;
+         rdfs:range ex:EntityReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#temporalRelationship
+ex:temporalRelationship rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf ex:factoidRelationship .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#then
+ex:then rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf ex:temporalRelationship .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#therefore
+ex:therefore rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf ex:causalRelationship .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#toWhere
+ex:toWhere rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf ex:locationProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#what
+ex:what rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf ex:sceneObjectProperty ;
+      rdfs:domain ex:Factoid ;
+      rdfs:range ex:EntityReference ,
+                 ex:Factoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#when
+ex:when rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf ex:sceneObjectProperty ;
+      rdfs:domain ex:Factoid ;
+      rdfs:range ex:HuTimePeriod .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#whom
+ex:whom rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf ex:sceneObjectProperty ;
+      rdfs:domain ex:Factoid ;
+      rdfs:range ex:EntityReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#with
+ex:with rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf ex:how ;
+      rdfs:range ex:EntityReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#withWho
+ex:withWho rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf ex:contextProperty ;
+         rdfs:domain ex:PersonInContext ;
+         rdfs:range ex:PersonInContext .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#compriseOfNumber
+ex:compriseOfNumber rdf:type owl:DatatypeProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#contextDescription
+ex:contextDescription rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ex:EntityInContext ;
+                    rdfs:range xsd:string .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#description
+ex:description rdf:type owl:DatatypeProperty .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#hasNumber
+ex:hasNumber rdf:type owl:DatatypeProperty ;
+           rdfs:domain ex:EntityReference ;
+           rdfs:range xsd:int .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#sourceDescription
+ex:sourceDescription rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://resource.hutime.org/ontology/CalendarDate
+hutime:CalendarDate rdf:type owl:Class ;
+                    rdfs:subClassOf ex:HuTimePeriod .
+
+
+###  http://resource.hutime.org/ontology/CalendarMonth
+hutime:CalendarMonth rdf:type owl:Class ;
+                     rdfs:subClassOf ex:HuTimePeriod .
+
+
+###  http://resource.hutime.org/ontology/CalendarYear
+hutime:CalendarYear rdf:type owl:Class ;
+                    rdfs:subClassOf ex:HuTimePeriod .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Action
+ex:Action rdf:type owl:Class ;
+        rdfs:subClassOf ex:EventFactoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#ChronPeriod
+ex:ChronPeriod rdf:type owl:Class .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Community
+ex:Community rdf:type owl:Class ;
+           rdfs:subClassOf ex:Person .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#CommunityInContext
+ex:CommunityInContext rdf:type owl:Class ;
+                    rdfs:subClassOf ex:PersonInContext .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#CommunityReference
+ex:CommunityReference rdf:type owl:Class ;
+                    rdfs:subClassOf ex:PersonReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#ConceptualObject
+ex:ConceptualObject rdf:type owl:Class ;
+                  rdfs:subClassOf ex:Object .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#ConceptualObjectReference
+ex:ConceptualObjectReference rdf:type owl:Class ;
+                           rdfs:subClassOf ex:ObjectReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Contact
+ex:Contact rdf:type owl:Class ;
+         rdfs:subClassOf ex:EventFactoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Entity
+ex:Entity rdf:type owl:Class .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#EntityInContext
+ex:EntityInContext rdf:type owl:Class .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#EntityReference
+ex:EntityReference rdf:type owl:Class .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#EventFactoid
+ex:EventFactoid rdf:type owl:Class ;
+              rdfs:subClassOf ex:Factoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Factoid
+ex:Factoid rdf:type owl:Class .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#FamilialRelationship
+ex:FamilialRelationship rdf:type owl:Class ;
+                      rdfs:subClassOf ex:Relationship .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#GeoFactoid
+ex:GeoFactoid rdf:type owl:Class ;
+            rdfs:subClassOf ex:Factoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Group
+ex:Group rdf:type owl:Class ;
+       rdfs:subClassOf ex:Person .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#GroupInContext
+ex:GroupInContext rdf:type owl:Class ;
+                rdfs:subClassOf ex:PersonInContext .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#GroupReference
+ex:GroupReference rdf:type owl:Class ;
+                rdfs:subClassOf ex:PersonReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#HuTimePeriod
+ex:HuTimePeriod rdf:type owl:Class .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Institution
+ex:Institution rdf:type owl:Class ;
+             rdfs:subClassOf ex:Entity .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#InstitutionInContext
+ex:InstitutionInContext rdf:type owl:Class ;
+                      rdfs:subClassOf ex:EntityInContext .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#InstitutionReference
+ex:InstitutionReference rdf:type owl:Class ;
+                      rdfs:subClassOf ex:EntityReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Object
+ex:Object rdf:type owl:Class ;
+        rdfs:subClassOf ex:Entity .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#ObjectInContext
+ex:ObjectInContext rdf:type owl:Class ;
+                 rdfs:subClassOf ex:EntityInContext .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#ObjectReference
+ex:ObjectReference rdf:type owl:Class ;
+                 rdfs:subClassOf ex:EntityReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Office
+ex:Office rdf:type owl:Class ;
+        rdfs:subClassOf ex:StateOfAffairsFactoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Person
+ex:Person rdf:type owl:Class ;
+        rdfs:subClassOf ex:Entity .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#PersonInContext
+ex:PersonInContext rdf:type owl:Class ;
+                 rdfs:subClassOf ex:EntityInContext .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#PersonReference
+ex:PersonReference rdf:type owl:Class ;
+                 rdfs:subClassOf ex:EntityReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#PhysicalObject
+ex:PhysicalObject rdf:type owl:Class ;
+                rdfs:subClassOf ex:Object .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#PhysicalObjectReference
+ex:PhysicalObjectReference rdf:type owl:Class ;
+                         rdfs:subClassOf ex:ObjectReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Place
+ex:Place rdf:type owl:Class ;
+       rdfs:subClassOf ex:Entity .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#PlaceInContext
+ex:PlaceInContext rdf:type owl:Class ;
+                rdfs:subClassOf ex:EntityInContext .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#PlaceReference
+ex:PlaceReference rdf:type owl:Class ;
+                rdfs:subClassOf ex:EntityReference .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Predicate
+ex:Predicate rdf:type owl:Class .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#PredicateReference
+ex:PredicateReference rdf:type owl:Class .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Property
+ex:Property rdf:type owl:Class .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Relationship
+ex:Relationship rdf:type owl:Class ;
+              rdfs:subClassOf ex:StateOfAffairsFactoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Situation
+ex:Situation rdf:type owl:Class ;
+           rdfs:subClassOf ex:StateOfAffairsFactoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#SocialRelationship
+ex:SocialRelationship rdf:type owl:Class ;
+                    rdfs:subClassOf ex:Relationship .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Source
+ex:Source rdf:type owl:Class .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#StateOfAffairsFactoid
+ex:StateOfAffairsFactoid rdf:type owl:Class ;
+                       rdfs:subClassOf ex:Factoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Statement
+ex:Statement rdf:type owl:Class ;
+           rdfs:subClassOf ex:EventFactoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Thought
+ex:Thought rdf:type owl:Class ;
+         rdfs:subClassOf ex:EventFactoid .
+
+
+###  https://junjun7613.github.io/RomanFactoid_v2/Roman_Contextual_Factoid.owl#Title
+ex:Title rdf:type owl:Class ;
+       rdfs:subClassOf ex:StateOfAffairsFactoid .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
